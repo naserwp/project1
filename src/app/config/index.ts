@@ -15,9 +15,9 @@ import dotenv from 'dotenv';
 import path from 'path';
 
 // console.log('__dirname:', __dirname);
-dotenv.config({ path: path.join(__dirname, '..', '..', '.env') });
+// dotenv.config({ path: path.join(__dirname, '..', '..', '.env') });
 
-// dotenv.config({ path: path.join(process.cwd(), '.env') });
+dotenv.config({ path: path.join((process.cwd(), '.env')) });
 
 export default {
   port: process.env.PORT,
